@@ -40,7 +40,14 @@ create table participatedvar(driver_id varchar(10), reg_num varchar(10),report_n
 insert into participatedvar values('1233','KRISHNA','11','2500');
 desc PARTICIPATEDVAR   
    
-   
-          select * from ownsvar
+  update participated set damage_amount=25000 where reg_num='KA053408' and report_num=12;
+  insert into accident values(16,'15-MAR-08','Bellary');
+  select count(distinct driver_id) CNT from participated a, accident b where a.report_num=b.report_numand b.accident_date like '%08';
+  
+  
+  
+  select count(report_num) CNT from car c,participated p where c.reg_num=p.reg_numand model='Innova';
+  
+  
 
       
